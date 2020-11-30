@@ -3,8 +3,6 @@ services:
   test_import:
     build: .
     command: Command=import InputFilename=/data/test.json
-    depends_on:
-    - metabase 
     volumes:
     - type: volume
       source: data
@@ -13,4 +11,5 @@ services:
 
 volumes:
   data:
+    driver: ./
 

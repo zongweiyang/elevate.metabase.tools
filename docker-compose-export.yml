@@ -3,13 +3,12 @@ services:
   test_export:
     build: .
     command: Command=export OutputFilename=/data/test.json
-    depends_on:
-    - metabase 
     volumes:
     - type: volume
-      source: data
+      source: data 
       target: /data
 
 volumes:
-  data:
+  data: 
+    driver: ./
 
