@@ -1,0 +1,8 @@
+﻿{
+  "MetabaseApi": {
+    "Url": "",
+    "Username": "",
+    "Password":  "",
+    "IgnoreSSLErrors": true
+  }
+}
