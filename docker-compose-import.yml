@@ -2,7 +2,7 @@ version: "3.3"
 services:
   test_import:
     build: .
-    command: Command=import InputFilename=/data/test.json
+    command: Command=import InputFilename=/data/test.json DatabaseMapping:2=2
     volumes:
     - type: volume
       source: data
